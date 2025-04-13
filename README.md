@@ -1,5 +1,16 @@
 # linux_nvim
 
+## Setup for ansible
+```
+$ cd ansible/roles/common/files/$HOME/.config
+$ git submodule add "https://github.com/isamuono/linux_nvim" nvim
+```
+
+### Update submodule dir
+```
+$ git submodule update --remote
+```
+
 ## Setup on a client PC
 ### nvim-web-devicons
 #### Windows
