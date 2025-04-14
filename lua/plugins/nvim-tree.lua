@@ -27,5 +27,18 @@ return {
       {mode = "n", "t<Leader>f", ":NvimTreeRefresh<CR>"}
     },
   },
-  {"nvim-tree/nvim-web-devicons", opts = {},}
+  {"nvim-tree/nvim-web-devicons",
+    opts = {},
+    config = function()
+    --require("nvim-web-devicons").get_icons {}
+      require('nvim-web-devicons').setup {
+        override = {
+          yml = {
+            icon = '',
+            color = '#9F74B3' --vscode yml/yaml icon color
+          }
+        }
+      }
+    end,
+  }
 }
