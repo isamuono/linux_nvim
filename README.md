@@ -12,6 +12,15 @@ $ git submodule update --remote
 ```
 
 ## Setup on a client PC
+### Preparation for ansible
+```
+$ git clone --recurse-submodules https://github.com/isamuono/dom-servers-tmp
+~/.../ansible$ mv roles/common/files/home/ymir/ roles/common/files/home/{{ LOCALUSER }}
+and so on...
+$ cp ~/.bashrc ~/.bashrc.bak
+and so on...
+```
+
 ### nvim-web-devicons
 #### Windows
 1. Download zip file and Install
