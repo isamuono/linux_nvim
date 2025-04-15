@@ -30,10 +30,10 @@ return {
   {"nvim-tree/nvim-web-devicons",
     opts = {},
     config = function()
-    --require("nvim-web-devicons").get_icons {}
+      --require("nvim-web-devicons").get_icons {}
       require('nvim-web-devicons').setup {
         override = {
-          yml = {
+          yml, yaml = {
             icon = '',
             color = '#9F74B3' --vscode yml/yaml icon color
           }
