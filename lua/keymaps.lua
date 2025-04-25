@@ -24,7 +24,7 @@ vim.keymap.set('i', '<C-l>', '<RIGHT>', {noremap = true})
 
 vim.keymap.set('n', '<Leader>j', '10<DOWN>', {noremap = true})
 vim.keymap.set('n', '<Leader>k', '10<UP>', {noremap = true})
-vim.keymap.set('n', '<Leader>h', '^', {noremap = true})
+vim.keymap.set('n', '<Leader>h', '0', {noremap = true})
 vim.keymap.set('n', '<Leader>l', '$', {noremap = true})
 
 vim.keymap.set('v', '<C-j>', '10<DOWN>', {noremap = true})
@@ -32,15 +32,24 @@ vim.keymap.set('v', '<C-k>', '10<UP>', {noremap = true})
 vim.keymap.set('v', '<Leader>h', '^', {noremap = true})
 vim.keymap.set('v', '<Leader>l', '$', {noremap = true})
 
---vim.keymap.set('n', '<Leader><S-Tab>', ':tabprevious <CR>', {noremap = true})
---vim.keymap.set('n', '<Leader><Tab>', ':tabnext <CR>', {noremap = true})
 vim.keymap.set('n', '<Leader>[', ':tabprevious <CR>', {noremap = true})
 vim.keymap.set('n', '<Leader>]', ':tabnext <CR>', {noremap = true})
 
 -- Blackhole register
 vim.keymap.set('n', 'x', '"_x')
 vim.keymap.set('n', 'X', '"_X')
+vim.keymap.set('n', 's', '"_s')
+vim.keymap.set('n', 'S', '"_S')
+ffm.keymap.set('n', 'D', '"_D')
+vim.keymap.set('n', 'dgg', '"_dgg')
+vim.keymap.set('n', 'dG', '"_dG')
 vim.keymap.set('n', 'cw', '"_cw')
+vim.keymap.set('n', 'ce', '"_ce')
+vim.keymap.set('n', 'cb', '"_cb')
+vim.keymap.set('n', 'cc', '"_cc')
+vim.keymap.set('n', 'C', '"_C')
+vim.keymap.set('n', 'cgg', '"_cgg')
+vim.keymap.set('n', 'cG', '"_cG')
 
 -- telescope.nvim keymaps
 local builtin = require('telescope.builtin')
