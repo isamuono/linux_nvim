@@ -1,4 +1,5 @@
-vim.opt.autoindent = true
+--vim.opt.autoindent = true
+vim.opt.autoindent = false
 vim.opt.smartindent = true
 vim.opt.smarttab = true
 vim.opt.expandtab = true
@@ -27,8 +28,8 @@ vim.keymap.set('n', '<Leader>k', '10<UP>', {noremap = true})
 vim.keymap.set('n', '<Leader>h', '0', {noremap = true})
 vim.keymap.set('n', '<Leader>l', '$', {noremap = true})
 
-vim.keymap.set('v', '<C-j>', '10<DOWN>', {noremap = true})
-vim.keymap.set('v', '<C-k>', '10<UP>', {noremap = true})
+vim.keymap.set('v', '<Leader>j', '10<DOWN>', {noremap = true})
+vim.keymap.set('v', '<Leader>k', '10<UP>', {noremap = true})
 vim.keymap.set('v', '<Leader>h', '^', {noremap = true})
 vim.keymap.set('v', '<Leader>l', '$', {noremap = true})
 
