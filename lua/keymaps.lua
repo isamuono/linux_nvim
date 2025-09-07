@@ -14,6 +14,7 @@ vim.opt.cursorline = true
 vim.opt.cursorcolumn = true
 vim.opt.errorbells = false
 vim.opt.visualbell = false
+vim.opt.mouse = ""
 vim.opt.backup = false
 vim.g.mapleader = " "
 vim.keymap.set('i', '<C-k>', '<Esc>', {noremap = true})
