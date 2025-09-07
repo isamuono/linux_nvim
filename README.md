@@ -21,6 +21,8 @@ $ cp ~/.bashrc ~/.bashrc.bak
 and so on...
 $ vi ansible/roles/common/files/$HOME/.config/nvim/lua/plugins/denops_vim.lua
   1 vim.g['denops#deno'] = '/home/{{ LOCALUSER }}/.deno/bin/deno'
+$ vi ansible/roles/common/files/$HOME/.config/nvim/lua/plugins/ddc_vim.lua
+  1 vim.g['denops#deno'] = '/home/{{ LOCALUSER }}/.deno/bin/deno'
 $ ap ...
 ```
 
